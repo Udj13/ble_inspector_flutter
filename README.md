@@ -12,6 +12,19 @@ This list will be expanded.
 
 ----------------------------------------------
 
+
+
+App Store: https://apps.apple.com/ru/app/ble-inspector/id1615385036
+
+GooglePlay: https://play.google.com/store/apps/details?id=ru.shlyagin.ble_inspector
+
+----------------------------------------------
+
+shlyagin@gmail.com
+
+----------------------------------------------
+
+
 # Screenshots
 
 ## Main screen Android
