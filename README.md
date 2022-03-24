@@ -10,17 +10,15 @@ Sensors supported:
 
 This list will be expanded.
 
-----------------------------------------------
-
-
-
-App Store: https://apps.apple.com/ru/app/ble-inspector/id1615385036
-
-GooglePlay: https://play.google.com/store/apps/details?id=ru.shlyagin.ble_inspector
+Want to add your sensor? shlyagin@gmail.com
 
 ----------------------------------------------
 
-shlyagin@gmail.com
+[![image](https://user-images.githubusercontent.com/54446451/159944768-9d67f01b-6657-4abf-8b83-6af861813203.png)](https://apps.apple.com/ru/app/ble-inspector/id1615385036)
+
+
+[![image](https://user-images.githubusercontent.com/54446451/159944833-5c906f5f-61c7-4b45-8715-b167915c0620.png)](https://play.google.com/store/apps/details?id=ru.shlyagin.ble_inspector)
+
 
 ----------------------------------------------
 
