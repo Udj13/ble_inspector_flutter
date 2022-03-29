@@ -19,6 +19,7 @@ Want to add your sensor? shlyagin@gmail.com
 
 [![image](https://user-images.githubusercontent.com/54446451/159944833-5c906f5f-61c7-4b45-8715-b167915c0620.png)](https://play.google.com/store/apps/details?id=ru.shlyagin.ble_inspector)
 
+----------------------------------------------
 
 # Youtube
 
