@@ -1,0 +1,69 @@
+{
+    "helloWorld": "Hello World!",
+    "@helloWorld": {
+        "description": "The conventional newborn programmer greeting"
+    },
+    "bleInspector": "BLE Inspector",
+    "scanning":"Scanning...",
+
+    "enableBluetooth":"Please enable bluetooth \n to search BLE devices",
+
+
+    "firmware":"Firmware",
+    "version":"version",
+
+    "inclination":"Inclination",
+
+    "temperature":"Temperature",
+
+    "battery":"Battery",
+    "volts":"Volts",
+
+    "illumination":"Illumination",
+    "lux":"Lux",
+
+    "fuelLevel":"Fuel level",
+    "tiltAngle":"Tilt angle",
+
+    "fuelData":"Fuel data",
+    "liters":"Liters",
+
+    "mac":"MAC",
+
+    "sensorDescriptionFuelLevel":"Fuel level",
+    "sensorDescriptionTiltAngle":"Tilt angle",
+    "sensorDescriptionTemperature":"Temperature",
+
+    "newLocalName":"New local name:",
+    "newName":"new name",
+    "close":"Close",
+    "saveAs":"Save as",
+
+    "copied":"Copied",
+
+    "angle":"Angle",
+    "degrees":"degrees",
+
+    "mode":"Mode",
+    "active":"Active",
+    "transportation":"Transportation",
+
+    "horizontalRotation":"Horizontal rotation",
+    "verticalRotation":"Vertical rotation",
+    "bucket":"Bucket",
+    "plow":"Plow",
+    "angleControl":"Angle control",
+
+    "horizontalAngle":"Horizont",
+    "verticalAngle":"Vertical",
+    "container":"Container",
+
+    "disabled":"disabled"
+
+
+}
+
+
+
+
+

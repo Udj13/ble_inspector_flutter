@@ -1,0 +1,62 @@
+{
+    "helloWorld": "Здравствуй мир",
+
+    "bleInspector": "BLE инспектор",
+    "scanning":"Поиск...",
+
+    "enableBluetooth":"Для поиска BLE устройств \nнеобходимо включить bluetooth",
+
+    "firmware":"Прошивка",
+    "version":"версия",
+
+    "inclination":"Наклон",
+
+    "temperature":"Температура",
+
+    "battery":"Батарея",
+    "volts":"Вольт",
+
+    "illumination":"Яркость",
+    "lux":"люкс",
+
+    "fuelLevel":"Объем",
+    "tiltAngle":"Наклон",
+    "fuelData":"Данные",
+    "liters":"литры",
+
+    "mac":"Адрес",
+
+    "sensorDescriptionFuelLevel":"Уровень",
+    "sensorDescriptionTiltAngle":"Наклон",
+    "sensorDescriptionTemperature":"Температура",
+
+    "newLocalName":"Запомнить как:",
+    "newName":"новое имя",
+    "close":"Закрыть",
+    "saveAs":"Запомнить",
+
+    "copied":"Скопировано",
+
+    "angle":"Угол",
+    "degrees":"градусы",
+
+    "mode":"Режим",
+    "active":"Работает",
+    "transportation":"Отключен",
+
+    "horizontalRotation":"Горизон. вращение",
+    "verticalRotation":"Верт. вращение",
+    "bucket":"Контроль ковша",
+    "plow":"Контроль отвала",
+    "angleControl":"Контроль угла",
+
+    "horizontalAngle":"Горизонт",
+    "verticalAngle":"Вертикаль",
+    "container":"Контейнер",
+
+    "disabled":"отключен"
+
+
+
+
+}

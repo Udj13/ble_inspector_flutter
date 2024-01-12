@@ -1,11 +1,82 @@
+import 'package:ble_inspector/widgets/escort_tw.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_blue/flutter_blue.dart';
-import 'widgets.dart';
+
+import 'widgets/escort_du.dart';
+import 'widgets/escort_td.dart';
+import 'widgets/escort_tl.dart';
+import 'widgets/mielta_fantom.dart';
 
 Widget? GetSensor(AdvertisementData data, String mac) {
-  if (kDebugMode) {
-    print(data);
+  // if (kDebugMode) {
+  //   print(data);
+  // }
+
+  if ((data.localName.isNotEmpty) && (data.localName.substring(0, 2) == 'TW')) {
+    if (kDebugMode) print('Sensor TW found');
+    if (kDebugMode) print(data);
+
+    int fuelLevel = 0;
+    int fuelData = 0;
+    int battery = 0;
+    int temperature = 0;
+    int firmware = 0;
+    bool ready = false;
+
+    data.manufacturerData.forEach((key, value) {
+      if (value.length == 12) {
+        fuelLevel = value[1] + value[2] * 256;
+        fuelData = value[6] + value[7] * 256;
+        battery = value[3];
+        temperature = value[4];
+        temperature > 127 ? temperature -= 256 : {};
+        firmware = value[5];
+        ready = true;
+      }
+    });
+
+    if (ready) {
+      return EscortTW(
+          name: data.localName,
+          mac: mac,
+          fuelData: fuelData,
+          fuelLevel: fuelLevel,
+          temperature: temperature,
+          battery: battery,
+          firmware: firmware);
+    }
+  }
+
+  if ((data.localName.isNotEmpty) && (data.localName.substring(0, 2) == 'DU')) {
+    // if (kDebugMode) print('Sensor DU found');
+    // if (kDebugMode) print(data);
+
+    int angle = 0;
+    int mode = 0;
+    int battery = 0;
+    int firmware = 0;
+    bool ready = false;
+
+    data.manufacturerData.forEach((key, value) {
+      if (value.length == 12) {
+        mode = value[1];
+        angle = value[6];
+        battery = value[10];
+        firmware = value[11];
+        ready = true;
+      }
+    });
+
+    if (ready) {
+      return EscortDU(
+          name: data.localName,
+          mac: mac,
+          angle: angle,
+          mode: mode,
+          battery: battery,
+          firmware: firmware);
+    }
   }
 
   if ((data.localName.isNotEmpty) && (data.localName.substring(0, 2) == 'MD')) {
@@ -30,7 +101,7 @@ Widget? GetSensor(AdvertisementData data, String mac) {
       }
     });
 
-    if (ready)
+    if (ready) {
       return MieltaFantom(
           name: data.localName,
           mac: mac,
@@ -39,6 +110,7 @@ Widget? GetSensor(AdvertisementData data, String mac) {
           temperature: temperature,
           inclination: inclination,
           battery: battery);
+    }
   }
 
   if ((data.localName.isNotEmpty) && (data.localName.substring(0, 2) == 'TL')) {
@@ -64,7 +136,7 @@ Widget? GetSensor(AdvertisementData data, String mac) {
       }
     });
 
-    if (ready)
+    if (ready) {
       return EscortTL(
           name: data.localName,
           mac: mac,
@@ -72,6 +144,7 @@ Widget? GetSensor(AdvertisementData data, String mac) {
           illumination: illumination,
           battery: battery,
           firmware: firmware);
+    }
   }
 
   if ((data.localName.isNotEmpty) && (data.localName.substring(0, 2) == 'TD')) {
@@ -96,7 +169,7 @@ Widget? GetSensor(AdvertisementData data, String mac) {
       }
     });
 
-    if (ready)
+    if (ready) {
       return EscortTD(
           name: data.localName,
           mac: mac,
@@ -105,6 +178,7 @@ Widget? GetSensor(AdvertisementData data, String mac) {
           temperature: temperature,
           battery: battery,
           firmware: firmware);
+    }
   }
 
   return null;

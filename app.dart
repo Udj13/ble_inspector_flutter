@@ -1,14 +1,13 @@
 import 'package:ble_inspector/styles.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_blue/flutter_blue.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+
 import 'admob.dart';
-import 'screens.dart';
 import 'model.dart';
-import 'demo_widgets.dart';
+import 'screens.dart';
 
 class BLEInspectorApp extends StatelessWidget {
   const BLEInspectorApp({Key? key}) : super(key: key);
@@ -21,6 +20,7 @@ class BLEInspectorApp extends StatelessWidget {
 
     return CupertinoApp(
         title: 'BLE Inspector',
+        debugShowCheckedModeBanner: false,
         localizationsDelegates: [
           AppLocalizations.delegate,
           GlobalMaterialLocalizations.delegate,
@@ -136,6 +136,9 @@ class _CupertinoBLEInspectorHomePageState
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
+                    // DemoMieltaFantom(context),
+                    // DemoEscortTD(context),
+                    // DemoEscortTL(context),
                     StreamBuilder<List<ScanResult>>(
                       stream: FlutterBlue.instance.scanResults,
                       initialData: [],
