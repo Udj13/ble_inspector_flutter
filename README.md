@@ -5,6 +5,8 @@ MAC address available on Android.
 
 Sensors supported:  
 - [x] Escort TL (temperature), 
+- [x] Escort DU (tilt angle sensor), 
+- [x] Escort TD-150 BLE (fuel level ), 
 - [x] Escort TD (fuel level ), 
 - [x] Mielta Fantom (fuel level ).
 
